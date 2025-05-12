@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+* {
+  overflow-x: hidden !important;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  overflow-y: hidden;
+}
+
+
+body {
+  background-color: #c9d6ff;
+    background: linear-gradient(to right, #e2e2e2, #c9d6ff);
+}
+html {
+  overflow-y: auto !important;
+}
+
+/* .text-primary {
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  -webkit-background-clip: text; 
+  color: transparent !important; 
+} */
+
+/* .btn-primary {
+  background: linear-gradient(to right, #6a11cb, #2575fc) !important;
+} */
+
+.background-blur {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -999991; /* чтобы фон был позади контента */
+  overflow: hidden;
+}
+
+.background-blur::before,
+.background-blur::after {
+  content: '';
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(102,126,234,0.4), rgba(255,255,255,0));
+  filter: blur(30px);
+  border-radius: 50%;
+}
+
+.background-blur::after {
+  top: -100px;
+  left: -100px;
+}
+
+.background-blur::before {
+  bottom: -100px;
+  right: -100px;
+}
+
+.form-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  backdrop-filter: blur(4px);
+  background-color: rgba(0, 0, 0, 0.2); /* затемнение + блюр */
+  z-index: 999; /* выше всего, кроме самого модального окна */
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.form-background div {
+  z-index: 1000;
+}
