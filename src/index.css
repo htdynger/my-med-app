@@ -12,10 +12,11 @@
 
 body {
   background-color: #c9d6ff;
-    background: linear-gradient(to right, #e2e2e2, #c9d6ff);
+  background: linear-gradient(to right, #e2e2e2, #c9d6ff);
+  
 }
 html {
-  overflow-y: auto !important;
+  overflow-y: visible !important;
 }
 
 /* .text-primary {
@@ -67,13 +68,13 @@ html {
   height: 100vh;
   backdrop-filter: blur(4px);
   background-color: rgba(0, 0, 0, 0.2); /* затемнение + блюр */
-  z-index: 999; /* выше всего, кроме самого модального окна */
-
+  /* z-index: 999;  */
+  overflow-y: visible !important;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
 .form-background div {
-  z-index: 1000;
+  /* z-index: 1000; */
 }

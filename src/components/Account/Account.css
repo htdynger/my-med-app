@@ -11,15 +11,20 @@
 } */
 
 .containerAccount {
-    background-color: #fff;
+    background: linear-gradient(#e2e2e2, #c9d6ff);
+    
     border-radius: 30px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
     position: relative;
     overflow: hidden;
     width: 768px;
-    max-width: 100%;
-    min-height: 480px;
+    
+    min-height: 540px;
+    
 }
+
+
+
 
 .containerAccount p{
     font-size: 14px;
@@ -47,7 +52,7 @@
 }
 
 .containerAccount form{
-    background-color: #fff;
+    background: linear-gradient(#e2e2e2, #c9d6ff);
     display: flex;
     /* align-items: center; */
     justify-content: center;
@@ -56,7 +61,7 @@
     height: 100%;
 }
 
-.containerAccount input,.container select{
+.containerAccount input,.containerAccount select{
     background-color: #eee;
     border: none;
     margin: 8px 0;
@@ -123,7 +128,7 @@
     z-index: 1000;
 }
 
-.container.active .toggle-container{
+.containerAccount.active .toggle-container{
     transform: translateX(-100%);
     border-radius: 0 150px 100px 0;
 }
@@ -142,7 +147,7 @@
     transition: all 0.6s ease-in-out;
 }
 
-.container.active .toggle{
+.containerAccount.active .toggle{
     transform: translateX(50%);
 }
 
@@ -165,7 +170,7 @@
     transform: translateX(-200%);
 }
 
-.container.active .toggle-left{
+.containerAccount.active .toggle-left{
     transform: translateX(0);
 }
 
@@ -174,6 +179,48 @@
     transform: translateX(0);
 }
 
-.container.active .toggle-right{
+.containerAccount.active .toggle-right{
     transform: translateX(200%);
+}
+
+
+/* MOBILE  */
+.unSelectMobile {
+    /* border-right: 3px solid #000;
+    border-bottom: 3px solid #000; */
+    /* border: solid #000; */
+    border-bottom: 1.5px solid #0d6efd;
+    border-left: 1.5px solid #0d6efd;
+    border-right: 1.5px solid #0d6efd;
+    background: #fff;
+    /* box-shadow: 0px 0px 10px 0.01px rgba(34, 60, 80, 0.3) inset;
+     */
+
+     box-shadow: 0px -10px 12px 7px rgba(0, 0, 50, 0.2) inset;
+     
+
+
+}
+
+.containerAccountMobile {
+    background: linear-gradient(#f2f2f2, #c9d6ff);
+    border: 1px solid #0d6efd;
+    border-radius: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    position: relative;
+    overflow: visible;
+    width: 90vw;
+    
+    height: 80vh;
+}
+
+.containerAccountMobile input,.containerAccountMobile select{
+    background-color: #eee;
+    border: none;
+    margin: 8px 0;
+    padding: 10px 15px;
+    font-size: 13px;
+    border-radius: 8px;
+    width: 80vw;
+    outline: none;
 }
