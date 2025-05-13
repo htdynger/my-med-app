@@ -60,24 +60,32 @@ const InstantConsultation = () => {
 
     return (
         <center>
+            
             <div  className="searchpage-container">
-            <FindDoctorSearchIC onSearch={handleSearch} />
-            <div className="search-results-container">
-            {isSearched ? (
-                <center>
-                    <h2>{filteredDoctors.length} doctors are available {searchParams.get('location')}</h2>
-                    <h3>Book appointments with minimum wait-time verified doctor details</h3>
-                    {filteredDoctors.length > 0 ? (
-                    filteredDoctors.map(doctor => <DoctorCardIC className="doctorcard" {...doctor} key={doctor.name} />)
+            
+                
+                <FindDoctorSearchIC onSearch={handleSearch} />
+                
+                <div className="search-results-container my-5">
+                    
+                {isSearched ? (
+                    <>
+                        <h2 className='text text-center h2 my-2'>{filteredDoctors.length} doctors are available {searchParams.get('location')}</h2>
+                        <h3 className='text text-center text-muted h3 mb-5'>Book appointments with minimum wait-time verified doctor details</h3>
+                        <div className="doctorCardContainer">
+                            {filteredDoctors.length > 0 ? (
+                            filteredDoctors.map(doctor => <DoctorCardIC className="doctorcard" {...doctor} key={doctor.name} />)
+                            ) : (
+                            <p>No doctors found.</p>
+                            )}
+                        </div>
+                        
+                    </>
                     ) : (
-                    <p>No doctors found.</p>
+                    ''
                     )}
-                </center>
-                ) : (
-                ''
-                )}
+                </div>
             </div>
-        </div>
         </center>
     )
 }

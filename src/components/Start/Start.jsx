@@ -5,7 +5,7 @@ const Start = () => {
 
     
         <main>
-            <div className="background-blur"></div>
+            
             <br/>
 
             <h1 className="h1 fw-bold display-4 mt-5 mb-1 text-center text text-primary"> Lorem Ipsum </h1>

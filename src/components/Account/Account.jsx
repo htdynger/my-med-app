@@ -38,7 +38,7 @@ const Account = () => {
 
                     <div className="form-container sign-up">
                         <form>
-                            <h1 className='text text-center mb-3'>Create Account</h1>
+                            <h1 className='text text-nowrap text-center mb-3'>Create Account</h1>
 
                             <label htmlFor="role">Role</label>
                             <select id="role" className="form-select">

@@ -17,9 +17,8 @@
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
     position: relative;
     overflow: hidden;
-    width: 768px;
-    
-    min-height: 540px;
+    width: 80%;
+    height: 80%;
     
 }
 

@@ -16,8 +16,8 @@ function App() {
 
   return (
     <>
-      
-
+      <div className="background-blur"></div>
+     
       <BrowserRouter>
         <Navbar />
         <Routes> 

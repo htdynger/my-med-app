@@ -11,8 +11,13 @@
 
 
 body {
-  background-color: #c9d6ff;
-  background: linear-gradient(to right, #e2e2e2, #c9d6ff);
+  /* background-color: #c9d6ff; */
+
+  /* background: linear-gradient(to right, #e2e2e2, #c9d6ff); */
+  background: linear-gradient(#e2e2e2, #c9d6ff);
+  min-height: 100vh;
+  min-width: 100vw;
+  /* background: linear-gradient(#c9d6ff, #7d7dfd); */
   
 }
 html {
@@ -51,13 +56,45 @@ html {
 }
 
 .background-blur::after {
-  top: -100px;
+  top: 100px;
   left: -100px;
+  animation-name: test2;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
 }
 
 .background-blur::before {
-  bottom: -100px;
+  top: 50px;
   right: -100px;
+  animation-name: test1;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes test1 {
+  0% {
+    scale: 1;
+    /* transform: translate(1vw); */
+  } 50% {
+    scale: 1.5;
+    /* transform: translate(-100vw); */
+  } 100% {
+    scale: 1;
+    /* transform: translate(1vw); */
+  }
+}
+
+@keyframes test2 {
+  0% {
+    scale: 1;
+    /* transform: translate(1vw); */
+  } 50% {
+    scale: 1.5;
+    /* transform: translate(100vw); */
+  } 100% {
+    scale: 1;
+    /* transform: translate(1vw); */
+  }
 }
 
 .form-background {

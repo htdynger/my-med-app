@@ -22,15 +22,15 @@
 
 }
 
-.search-results-container>h2 {
-    text-align: left;
-    font-size: 24px;
-    font-weight: 700;
-}
 
-.search-results-container>h3 {
+
+/* .search-results-container>h3 {
     margin-top: 12px;
     color: #2d2d32;
     text-align: left;
     font-size: 15px;
+} */
+
+.doctorCardContainer {
+    margin-top: 20rem;
 }

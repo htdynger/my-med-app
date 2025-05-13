@@ -28,6 +28,7 @@ const AppointmentFormIC = ({ doctorName, doctorSpeciality, onSubmit }) => {
             required
           />
         </div>
+        
         <div className="form-group">
           <label htmlFor="phoneNumber">Phone Number:</label>
           <input
